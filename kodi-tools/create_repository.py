@@ -64,7 +64,10 @@ import shutil
 import sys
 import tempfile
 import threading
-import urlparse
+try:
+    import urlparse
+except:
+    import urllib.parse as urlparse
 import xml.etree.ElementTree
 import zipfile
 
@@ -142,8 +145,8 @@ def generate_checksum(archive_path, is_binary=True, checksum_path_opt=None):
     binary_marker = '*' if is_binary else ' '
     # Force a UNIX line ending, like the md5sum utility.
     with io.open(checksum_path, 'w', newline='\n') as sig:
-        sig.write(u'{}\n'.format(digest))
-        # sig.write(u'{} {}{}\n'.format(digest, binary_marker, archive_relpath))
+        # sig.write(u'{}\n'.format(digest))
+        sig.write(u'{} {}{}\n'.format(digest, binary_marker, archive_relpath))
 
 
 def copy_metadata_files(source_folder, addon_target_folder, addon_metadata):
@@ -216,11 +219,12 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
             relative_root = os.path.join(
                 addon_metadata.id,
                 os.path.relpath(root, addon_location))
-            if '/.git' not in relative_root:
+            if '.git' not in relative_root:
                 for relative_path in files:
                         archive.write(
                             os.path.join(root, relative_path),
                             os.path.join(relative_root, relative_path))
+                
     generate_checksum(archive_path)
 
     if not os.path.samefile(addon_location, addon_target_folder):
