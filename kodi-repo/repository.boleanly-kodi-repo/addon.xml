@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.boleanly-kodi-repo" version="1.0.0" name="boleanly-kodi-repo" provider-name="aznhusband, boleanly">
+<addon id="repository.boleanly-kodi-repo" version="1.0.0" name="boleanly-kodi-repo" provider-name="boleanly, aznhusband">
     <extension point="xbmc.addon.repository" name="boleanly-kodi-repo">
         <info compressed="false">https://boleanly.github.io/kodi-repo/addons.xml</info>
         <checksum>https://boleanly.github.io/kodi-repo/addons.xml.md5</checksum>

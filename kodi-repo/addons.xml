@@ -17,7 +17,7 @@
     <platform>all</platform>
     <license>MIT License</license>
   </extension>
-</addon><addon id="repository.boleanly-kodi-repo" name="boleanly-kodi-repo" provider-name="aznhusband, boleanly" version="1.0.0">
+</addon><addon id="repository.boleanly-kodi-repo" name="boleanly-kodi-repo" provider-name="boleanly, aznhusband" version="1.0.0">
     <extension name="boleanly-kodi-repo" point="xbmc.addon.repository">
         <info compressed="false">https://boleanly.github.io/kodi-repo/addons.xml</info>
         <checksum>https://boleanly.github.io/kodi-repo/addons.xml.md5</checksum>

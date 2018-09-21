@@ -145,7 +145,8 @@ def generate_checksum(archive_path, is_binary=True, checksum_path_opt=None):
     binary_marker = '*' if is_binary else ' '
     # Force a UNIX line ending, like the md5sum utility.
     with io.open(checksum_path, 'w', newline='\n') as sig:
-        sig.write(u'{} {}{}\n'.format(digest, binary_marker, archive_relpath))
+        sig.write(u'{}'.format(digest))
+        #sig.write(u'{} {}{}\n'.format(digest, binary_marker, archive_relpath))
 
 
 def copy_metadata_files(source_folder, addon_target_folder, addon_metadata):
