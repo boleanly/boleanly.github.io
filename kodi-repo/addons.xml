@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.icdrama-boleanly" name="Icdrama (Bol)" provider-name="aznhusband, dumbo0001, boleanly, mugol, General-Meow, cthlo" version="1.9.6">
+<addons><addon id="plugin.video.icdrama-boleanly" name="Icdrama (Bol)" provider-name="aznhusband, dumbo0001, boleanly, mugol, General-Meow, cthlo" version="1.9.7">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.html5lib" version="0.999.0" />
@@ -28,7 +28,7 @@
         <description lang="en">boleanly-kodi-repo</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.23">
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.24">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
