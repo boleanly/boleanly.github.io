@@ -21,13 +21,13 @@ if [[ $ADDONS != *"/" ]]; then
 fi
 
 echo
-echo "Data directory: $DATADIR"
+echo "Repository Data directory: $DATADIR"
 echo
-echo "Addons directory: $ADDONS"
+echo "Addons Source directory: $ADDONS"
 echo
 
 ADDONS=$( ls -d  $ADDONS*/ )
-echo "List of addon directories:"
+echo "List of addons to be included:"
 echo "$ADDONS"
 echo
 
