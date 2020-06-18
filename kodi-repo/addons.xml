@@ -18,7 +18,7 @@
     <platform>all</platform>
     <license>MIT License</license>
   </extension>
-</addon><addon id="plugin.video.icdrama-boleanly" name="Icdrama (Bol)" provider-name="aznhusband, dumbo0001, boleanly, mugol, General-Meow, cthlo" version="2.0.0">
+</addon><addon id="plugin.video.icdrama-boleanly" name="Icdrama (Bol)" provider-name="aznhusband, dumbo0001, boleanly, mugol, General-Meow, cthlo" version="2.1.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.html5lib" version="0.999.0" />
