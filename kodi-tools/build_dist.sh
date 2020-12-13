@@ -5,7 +5,7 @@ DATADIR=$1
 ADDONS=$2
 
 if [ -z "${DATADIR}" ]; then
-	read -p "Enter relative path to data directory: "  DATADIR
+	read -p "Enter relative path to repo data directory: "  DATADIR
 fi
 
 if [ -z "${ADDONS}" ]; then
